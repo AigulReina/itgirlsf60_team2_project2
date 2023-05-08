@@ -1,3 +1,5 @@
+@import './header';
+
 $primary-color: #000000;
 
 
@@ -32,7 +34,8 @@ $secondary-color: #444A4A;
     top: 1302px;
 }
 
-p {
+
+.promotion__text {
     margin-top: 20px;
     font-family: 'Alegreya Sans';
     font-style: normal;
@@ -40,7 +43,6 @@ p {
     font-size: 19px;
     line-height: 36px;
     /* or 189% */
-    letter-spacing: 0.01em;
     color: $secondary-color;
     /* использование переменной */
 }
@@ -78,12 +80,12 @@ p {
         transform: translate(-50%, -50%);
         color: #FFFFFF;
     }
+    &:hover {
+        background-color: #444A4A;
+        color: #FFFFFF;
+    }
 }
 
-&:hover {
-    background-color: #444A4A;
-    color: #FFFFFF;
-}
 
 .background-rectangle {
     position: absolute;
