@@ -389,7 +389,7 @@ h2 {
   -ms-transform: rotate(270deg) translate(0px, 25px);
 }
 
-.cards {
+.shop__cards {
 
   display: flex;
   justify-content: center;
@@ -401,7 +401,7 @@ h2 {
 
 
 
-.card_background {
+.cards__background {
   z-index: 0;
   position: relative;
 }
@@ -413,7 +413,7 @@ h2 {
   height: 60%;
 }
 
-.shop {
+.carusel__shop {
   display: flex;
   justify-content: center;
   height: 30%;
@@ -423,7 +423,7 @@ h2 {
 
 }
 
-.shop_offer {
+.shop__offer {
 
   text-align: center;
   justify-content: center;
@@ -433,21 +433,22 @@ h2 {
 }
 
 
-.shop_infocoffee {
+.shop__infocoffee {
   display: inline-grid;
   z-index: 2;
   justify-content: space-around;
   align-items: stretch;
   position: absolute;
-  width: 10%;
+  width: 50%;
   text-align: center;
-  height: 30%;
-  margin-top: 3%;
+  height: 70%;
+  margin-top: 10%;
+
 
 
 }
 
-.shop-carusel {
+.carusel {
   width: 90%;
   margin: 0%;
 }
