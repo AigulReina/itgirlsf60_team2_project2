@@ -1,0 +1,196 @@
+$primary-color: #000000;
+
+
+.coffee-info {
+    display: inline-block;
+    width: 611px;
+    height: 38px;
+    margin-top: 150px;
+
+    @media only screen and (min-width: 768px) {
+        .coffee-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1000px;
+            height: 500px;
+            margin: 150px auto 0;
+        }
+    }
+
+
+}
+
+.coffee-info__image-container {
+    display: flex;
+    width: 240px;
+    height: 320px;
+
+    margin-top: -300px;
+    margin-left: 990px;
+
+    /* Secondary / Hard green */
+    border-radius: 900px;
+}
+
+.coffee-info__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: -390px;
+    margin-left: 990px;
+}
+
+@media only screen and (min-width:768px) {
+    .coffee-info__image-container {
+        width: 350px;
+        height: 350px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+
+
+
+.coffee-info__rectangle {
+
+    display: flex;
+    width: 510px;
+    height: 280px;
+
+    background-color: #E3EBE7;
+    margin-left: 850px;
+    margin-top: -300px;
+
+
+}
+
+
+
+.coffee-info__subtitle {
+    display: flex;
+    width: 117px;
+    height: 53px;
+
+
+    font-family: 'Cedarville Cursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 53px;
+    color: #000000;
+    opacity: 0.75;
+    text-align: center;
+    margin-top: -500px;
+    margin-left: 100px;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    white-space: nowrap;
+
+    @media only screen and (min-width: 768px) {
+        .coffee-info__subtitle {
+            display: none;
+        }
+    }
+
+
+}
+
+
+
+
+.coffee-info__title {
+
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: $primary-color;
+    margin-left: 50px;
+    margin-right: 0px;
+    margin-top: 100px;
+
+
+
+    /* использование переменной */
+
+
+    $secondary-color: #444A4A;
+
+}
+
+
+
+
+.coffee-info__text {
+    display: flex;
+    width: 615px;
+    height: 75px;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 36px;
+    /* or 189% */
+    color: $secondary-color;
+
+
+
+
+    /* использование переменной */
+}
+
+.coffee-info__button {
+    display: flex;
+    width: 240px;
+    height: 54px;
+    margin-top: 130px;
+    margin-left: 50px;
+    top: 30px;
+    color: #444A4A;
+    background-color: #2D635E;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+
+
+
+    &:before {
+        content: "Order now";
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 40px;
+        padding-top: 5px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #FFFFFF;
+
+    }
+
+    &:hover {
+        background-color: #444A4A;
+        color: #FFFFFF;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .coffee-info__button {
+            display: none;
+        }
+    }
+}
