@@ -1,10 +1,8 @@
 @charset "UTF-8";
-
 .header__container {
   width: 90%;
   margin: 0 auto;
 }
-
 @media (min-width: 768px) {
   .header__container {
     max-width: 1160px;
@@ -12,12 +10,10 @@
     padding: 0 20px;
   }
 }
-
 .header__menu {
   display: flex;
   justify-content: center;
 }
-
 @media (min-width: 768px) {
   .header__menu {
     justify-content: space-between;
@@ -26,32 +22,27 @@
     padding-bottom: 50px;
   }
 }
-
 .header__menu .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 11px;
 }
-
 @media (min-width: 768px) {
   .header__menu .logo {
     max-width: 236px;
     gap: 13px;
   }
 }
-
 .header__menu .logo__text {
   font-family: "Cedarville Cursive", cursive;
   font-weight: 400;
   font-size: 32px;
   line-height: 2;
 }
-
 .header__menu .nav {
   display: none;
 }
-
 @media (min-width: 768px) {
   .header__menu .nav {
     width: 676px;
@@ -60,14 +51,12 @@
     align-items: center;
   }
 }
-
 .header__section {
   display: flex;
   justify-content: center;
   margin-top: 150px;
   text-align: center;
 }
-
 @media (min-width: 768px) {
   .header__section {
     justify-content: space-between;
@@ -77,33 +66,27 @@
     text-align: left;
   }
 }
-
 .header__section .headline {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-
 @media (min-width: 768px) {
   .header__section .headline {
     gap: 26px;
   }
 }
-
 .header__section .banner {
   display: none;
 }
-
 @media (min-width: 768px) {
   .header__section .banner {
     display: flex;
     align-items: flex-end;
   }
-
   .header__section .banner_rectangle {
     padding-bottom: 47px;
   }
-
   .header__section .banner__sm-links {
     height: 300px;
     display: flex;
@@ -119,21 +102,21 @@
   opacity: 0;
 }
 
-#menu__toggle:checked~.menu__btn>span {
+#menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
 }
 
-#menu__toggle:checked~.menu__btn>span::before {
+#menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
   transform: rotate(0);
 }
 
-#menu__toggle:checked~.menu__btn>span::after {
+#menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
 
-#menu__toggle:checked~.menu__box {
+#menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
 }
@@ -150,9 +133,9 @@
   z-index: 1;
 }
 
-.menu__btn>span,
-.menu__btn>span::before,
-.menu__btn>span::after {
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
   display: block;
   position: absolute;
   width: 100%;
@@ -161,12 +144,12 @@
   transition-duration: 0.25s;
 }
 
-.menu__btn>span::before {
+.menu__btn > span::before {
   content: "";
   top: -8px;
 }
 
-.menu__btn>span::after {
+.menu__btn > span::after {
   content: "";
   top: 8px;
 }
@@ -208,14 +191,13 @@
 }
 
 .coffee-info {
-  position: absolute;
-  width: 411px;
+  display: inline-block;
+  width: 611px;
   height: 38px;
-  left: 120px;
-  top: 1239px;
+  margin-top: 150px;
 }
 
-h2 {
+.coffee-info__title {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
@@ -225,19 +207,18 @@ h2 {
   display: flex;
   align-items: center;
   color: #000000;
+  margin-left: 50px;
+  margin-right: 0px;
+  margin-top: 100px;
   /* использование переменной */
 }
 
-.coffee-info {
-  position: absolute;
-  width: 630px;
-  height: 175px;
-  left: 120px;
-  top: 1302px;
-}
-
-.promotion__text {
-  margin-top: 20px;
+.coffee-info__text {
+  display: flex;
+  width: 615px;
+  height: 75px;
+  margin-top: 30px;
+  margin-left: 50px;
   font-family: "Alegreya Sans";
   font-style: normal;
   font-weight: 400;
@@ -248,10 +229,12 @@ h2 {
   /* использование переменной */
 }
 
-.rectangle-button {
-  position: relative;
+.coffee-info__button {
+  display: flex;
   width: 240px;
   height: 54px;
+  margin-top: 130px;
+  margin-left: 50px;
   top: 30px;
   color: #444A4A;
   background-color: #2D635E;
@@ -265,61 +248,53 @@ h2 {
   line-height: 25px;
   letter-spacing: 0.01em;
 }
-
-.rectangle-button:before {
+.coffee-info__button:before {
   content: "Order now";
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  padding-top: 5px;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
-  align-items: center;
-  text-align: center;
-  transform: translate(-50%, -50%);
   color: #FFFFFF;
 }
-
-.rectangle-button:hover {
+.coffee-info__button:hover {
   background-color: #444A4A;
   color: #FFFFFF;
 }
 
-.background-rectangle {
-  position: absolute;
-  width: 500px;
+.coffee-info__background {
+  display: flex;
+  width: 510px;
   height: 280px;
-  left: 950px;
-  top: 40px;
   background-color: #E3EBE7;
+  margin-left: 850px;
+  margin-top: -300px;
 }
 
-.image-container {
-  position: absolute;
+.coffee-info__image-container {
+  display: flex;
   width: 240px;
   height: 320px;
-  left: 1050px;
-  right: 0;
-  top: 20px;
+  margin-top: -300px;
+  margin-left: 990px;
   /* Secondary / Hard green */
   border-radius: 900px;
 }
-
-.image-container img {
+.coffee-info__image-container .coffee-info__image {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
-.title {
-  position: absolute;
+.coffee-info__subtitle {
+  display: flex;
   width: 117px;
   height: 53px;
-  left: 365px;
-  top: 100px;
   font-family: "Cedarville Cursive";
   font-style: normal;
   font-weight: 400;
@@ -328,127 +303,9 @@ h2 {
   color: #000000;
   opacity: 0.75;
   text-align: center;
-  margin: 0;
-  padding: 0;
+  margin-top: 100px;
+  margin-left: 100px;
   transform: rotate(-90deg);
   transform-origin: left top;
   white-space: nowrap;
-}
-
-/*# sourceMappingURL=styles.css.map */
-
-
-
-.arrow-left,
-.arrow-right {
-  width: 0px;
-  height: 0px;
-  border: 50px solid transparent;
-  border-top-color: rgb(52, 85, 45);
-  color: #2D635E;
-  margin: 0;
-  padding: 0;
-  float: left;
-  margin-top: 15%;
-}
-
-.arrow-left:hover,
-.arrow-right:hover {
-
-  border-top-color: rgb(153, 58, 36);
-
-}
-
-.arrow-left:before,
-.arrow-right:before {
-  content: '';
-  width: 0px;
-  height: 0px;
-  border: 30px solid transparent;
-  border-top-color: #eff4f2;
-  display: inline-block;
-  -webkit-transform: translate(-30px, -50px);
-}
-
-
-.arrow-left {
-  transform: rotate(90deg) translate(0px, 25px);
-  -webkit-transform: rotate(90deg) translate(0px, 25px);
-  -moz-transform: rotate(90deg) translate(0px, 25px);
-  -o-transform: rotate(90deg) translate(0px, 25px);
-  -ms-transform: rotate(90deg) translate(0px, 25px);
-}
-
-
-
-.arrow-right {
-  transform: rotate(270deg) translate(0px, 25px);
-  -webkit-transform: rotate(270deg) translate(0px, 25px);
-  -moz-transform: rotate(270deg) translate(0px, 25px);
-  -o-transform: rotate(270deg) translate(0px, 25px);
-  -ms-transform: rotate(270deg) translate(0px, 25px);
-}
-
-.shop__cards {
-
-  display: flex;
-  justify-content: center;
-  margin-top: 3%;
-  height: 30%;
-  width: 70%;
-
-}
-
-
-
-.cards__background {
-  z-index: 0;
-  position: relative;
-}
-
-.carusel__background {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 60%;
-}
-
-.carusel__shop {
-  display: flex;
-  justify-content: center;
-  height: 30%;
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 40%;
-
-}
-
-.shop__offer {
-
-  text-align: center;
-  justify-content: center;
-  width: 40%;
-  position: relative;
-
-}
-
-
-.shop__infocoffee {
-  display: inline-grid;
-  z-index: 2;
-  justify-content: space-around;
-  align-items: stretch;
-  position: absolute;
-  width: 50%;
-  text-align: center;
-  height: 70%;
-  margin-top: 10%;
-
-
-
-}
-
-.carusel {
-  width: 90%;
-  margin: 0%;
-}
+}/*# sourceMappingURL=styles.css.map */
