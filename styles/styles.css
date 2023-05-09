@@ -191,12 +191,18 @@
 }
 
 .about__container {
-  max-width: 1160px;
-  width: 100%;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 375px) {
+  .about__container {
+    max-width: 1160px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+  }
 }
 
 .about__banner {
