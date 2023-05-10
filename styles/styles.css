@@ -343,6 +343,24 @@
   padding: 20px;
 }
 
+.shop__button, .headline__button btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 235px;
+  height: 54px;
+  color: #FFFFFF;
+  background-color: #2D635E;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  align-items: center;
+  text-align: center;
+}
+
 .coffee-info {
   position: absolute;
   width: 411px;
