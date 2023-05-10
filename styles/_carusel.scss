@@ -9,24 +9,24 @@
     padding: 0;
     float: left;
     margin-top: 10%;
-}
 
-.arrow-left:hover,
-.arrow-right:hover {
+    &:hover {
+        border-top-color: rgb(153, 58, 36);
+    }
 
-    border-top-color: rgb(153, 58, 36);
+    &::before {
+        content: '';
+        width: 0px;
+        height: 0px;
+        border: 30px solid transparent;
+        border-top-color: #eff4f2;
+        display: inline-block;
+        transform: translate(-30px, -50px);
+    }
 
-}
-
-.arrow-left:before,
-.arrow-right:before {
-    content: '';
-    width: 0px;
-    height: 0px;
-    border: 30px solid transparent;
-    border-top-color: #eff4f2;
-    display: inline-block;
-    -webkit-transform: translate(-30px, -50px);
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 
@@ -51,7 +51,9 @@
 .carusel {
     margin-top: 30%;
     background-color: #eff4f2;
+
 }
+
 
 
 
@@ -61,6 +63,11 @@
     margin: 0 auto;
     padding: 30px 0;
 
+    @media screen and (max-width: 768px) {
+        background-color: white;
+
+    }
+
 }
 
 .shop__column {
@@ -68,9 +75,16 @@
     flex: 30%;
     margin: 0 40px;
 
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        display: grid;
+        margin-top: 20px;
+        margin: 0 5px;
+        justify-content: center;
+
+    }
+
 }
-
-
 
 .shop__item {
     display: flex;
@@ -78,11 +92,15 @@
     background-color: white;
     border-radius: 10px;
     align-items: center;
-    flex: 0 1 33%;
+    flex: 33%;
     margin: 20px;
     padding: 0 30px;
 
-
+    @media screen and (max-width: 768px) {
+        border: solid #eff4f2;
+        box-shadow: 0px 15px 10px 0px #dfdede;
+        flex: 25%;
+    }
 }
 
 .offer__title {
