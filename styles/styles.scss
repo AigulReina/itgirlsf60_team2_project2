@@ -1,12 +1,11 @@
 @import './header';
 @import './about';
 @import './carusel';
-<<<<<<< HEAD
-=======
 @import './font-button';
 
->>>>>>> 5539416fe36c6760dc97204e82a00bd79cad592b
 $primary-color: #000000;
+$secondary-color: #444A4A;
+
 
 
 .coffee-info {
@@ -129,8 +128,7 @@ $primary-color: #000000;
     /* использование переменной */
 
 
-    $secondary-color: #444A4A;
-
+    
 }
 
 
