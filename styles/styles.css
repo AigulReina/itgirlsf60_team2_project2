@@ -1,4 +1,6 @@
-@charset "UTF-8";
+.header {
+  padding-bottom: 123px;
+}
 .header__container {
   width: 90%;
   margin: 0 auto;
@@ -414,29 +416,27 @@ h4 {
 }
 
 .coffee-info {
-  display: inline-block;
+  display: flex;
   width: 611px;
   height: 38px;
-  margin-top: 150px;
+  top: 150px;
 }
-@media only screen and (min-width: 768px) {
-  .coffee-info .coffee-info {
+@media (min-width: 375px) {
+  .coffee-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1000px;
-    height: 500px;
-    margin: 150px auto 0;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 100px auto 0;
   }
 }
 
 .coffee-info__image-container {
   display: flex;
+  position: relative;
   width: 240px;
   height: 320px;
-  margin-top: -300px;
-  margin-left: 990px;
-  /* Secondary / Hard green */
   border-radius: 900px;
 }
 
@@ -446,15 +446,15 @@ h4 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-top: -390px;
-  margin-left: 990px;
+  margin-top: 80px;
+  margin-left: -70px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 375px) {
   .coffee-info__image-container {
     width: 350px;
     height: 350px;
-    margin-top: 0;
+    margin-top: 100px;
     margin-left: 0;
   }
 }
@@ -469,6 +469,7 @@ h4 {
 
 .coffee-info__subtitle {
   display: flex;
+  position: absolute;
   width: 117px;
   height: 53px;
   font-family: "Cedarville Cursive";
@@ -485,7 +486,7 @@ h4 {
   transform-origin: left top;
   white-space: nowrap;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 375px) {
   .coffee-info__subtitle .coffee-info__subtitle {
     display: none;
   }
@@ -504,7 +505,6 @@ h4 {
   margin-left: 50px;
   margin-right: 0px;
   margin-top: 100px;
-  /* использование переменной */
 }
 
 .coffee-info__text {
@@ -520,7 +520,6 @@ h4 {
   line-height: 36px;
   /* or 189% */
   color: #444A4A;
-  /* использование переменной */
 }
 
 .coffee-info__button {
