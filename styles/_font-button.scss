@@ -1,0 +1,89 @@
+%tplbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 235px;
+    height: 54px;
+    color: #FFFFFF;
+    background-color: #2D635E;
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+}
+
+%tpltext{
+    color: #444A4A;
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 36px;
+}
+
+.headline__button btn{
+    @extend %tplbutton;
+}
+
+.shop__button{
+    @extend %tplbutton;
+}
+
+.nav__button btn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    height: 43px;
+    color: #FFFFFF;
+    background-color: #2D635E;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.nav__link{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.title1__text1{
+    @extend %tpltext;
+}
+
+.title1__text2{
+    @extend %tpltext;
+}
+
+.offer__text{
+    @extend %tpltext;
+}
+
+h1{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 63px;
+    line-height: 63px;
+}
+
+h4{
+    font-family: 'Cedarville Cursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 53px;
+}
+
+.offer__title{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+}
