@@ -1,11 +1,3 @@
-@import './header';
-@import './about';
-@import './carusel';
-<<<<<<< HEAD
-=======
-@import './font-button';
-
->>>>>>> 5539416fe36c6760dc97204e82a00bd79cad592b
 $primary-color: #000000;
 
 
@@ -13,16 +5,16 @@ $primary-color: #000000;
     display: inline-block;
     width: 611px;
     height: 38px;
-    margin-top: 150px;
+    top: 150px;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 375px) {
         .coffee-info {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 1000px;
-            height: 500px;
-            margin: 150px auto 0;
+            width: 100%;
+            flex-direction: row;
+            margin-top: 100px auto 0;
         }
     }
 
@@ -31,11 +23,9 @@ $primary-color: #000000;
 
 .coffee-info__image-container {
     display: flex;
+    position: relative;
     width: 240px;
     height: 320px;
-
-    margin-top: -300px;
-    margin-left: 990px;
 
     /* Secondary / Hard green */
     border-radius: 900px;
@@ -46,15 +36,17 @@ $primary-color: #000000;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-top: -390px;
-    margin-left: 990px;
+
+    margin-top: 80px;
+    margin-left: -70px;
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:375px) {
     .coffee-info__image-container {
         width: 350px;
         height: 350px;
-        margin-top: 0;
+
+        margin-top: 100px;
         margin-left: 0;
     }
 }
@@ -79,6 +71,7 @@ $primary-color: #000000;
 
 .coffee-info__subtitle {
     display: flex;
+    position: absolute;
     width: 117px;
     height: 53px;
 
@@ -97,7 +90,7 @@ $primary-color: #000000;
     transform-origin: left top;
     white-space: nowrap;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 375px) {
         .coffee-info__subtitle {
             display: none;
         }
