@@ -1,0 +1,156 @@
+$primary-color: #000000;
+
+.coffee__info {
+    display: inline-block;
+    width: 90%;
+    margin-top: 0 auto;
+
+    @media (min-width:768px) {
+        max-width: 1160px;
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+
+.coffee__info__title {
+
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: $primary-color;
+    margin-left: 220px;
+    margin-right: 0px;
+    margin-top: 50px;
+    /* использование переменной */
+}
+
+$secondary-color: #444A4A;
+
+
+
+.coffee__info__text {
+    display: flex;
+    width: 615px;
+    height: 75px;
+    margin-top: 40px;
+    margin-left: 200px;
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 36px;
+    /* or 189% */
+    color: $secondary-color;
+    /* использование переменной */
+}
+
+.coffee__info__button {
+    display: none;
+
+    @media (min-width:768px) {
+        display: flex;
+        width: 240px;
+        height: 54px;
+        margin-top: 130px;
+        margin-left: 200px;
+        top: 30px;
+        color: #444A4A;
+        background-color: #2D635E;
+        border: none;
+        border-radius: 5px;
+        padding: 12px 24px;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.01em;
+
+        &:before {
+            content: "Order now";
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 40px;
+            padding-top: 5px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            color: #FFFFFF;
+
+        }
+
+        &:hover {
+            background-color: #2D635E;
+            color: #FFFFFF;
+        }
+    }
+
+}
+
+.coffee__info__background {
+
+    display: flex;
+    width: 450px;
+    height: 278px;
+
+    background-color: #E3EBE7;
+    margin-left: 910px;
+    margin-top: -300px;
+}
+
+.coffee__info__image-container {
+    display: flex;
+    width: 240px;
+    height: 320px;
+
+    margin-top: -300px;
+    margin-left: 990px;
+
+
+
+
+    /* Secondary / Hard green */
+
+    border-radius: 900px;
+
+    .coffee__info__image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+.coffee__info__subtitle {
+    display: none;
+
+    @media (min-width:768px) {
+        display: flex;
+        width: 117px;
+        height: 53px;
+
+
+        font-family: 'Cedarville Cursive';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 53px;
+        color: #000000;
+        opacity: 0.75;
+        text-align: center;
+        margin-top: 100px;
+        margin-left: 100px;
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        white-space: nowrap;
+    }
+}
