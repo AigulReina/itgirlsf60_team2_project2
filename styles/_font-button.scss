@@ -63,3 +63,27 @@
 .offer__text{
     @extend %tpltext;
 }
+
+h1{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 63px;
+    line-height: 63px;
+}
+
+h4{
+    font-family: 'Cedarville Cursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 53px;
+}
+
+.offer__title{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+}
