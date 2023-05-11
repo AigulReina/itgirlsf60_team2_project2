@@ -77,6 +77,14 @@
     @extend %tpltext;
 }
 
+.footer__address{
+    @extend %tpltext;
+}
+
+.footer__copyright{
+    @extend %tpltext;
+}
+
 h1{
     font-family: 'Josefin Sans';
     font-style: normal;
