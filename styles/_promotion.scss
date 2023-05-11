@@ -6,31 +6,28 @@ $primary-color: #000000;
     height: 38px;
     top: 150px;
 
-}
+    .coffee__info__title {
 
-
-
-.coffee__info__title {
-
-    @extend %tpltitlefont;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    color: $primary-color;
-    margin-left: 300px;
-    margin-right: 0px;
-    margin-top: 100px;
-
-    @media (min-width:375px) {
+        @extend %tpltitlefont;
+        /* identical to box height */
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        width: 100%;
-        flex-direction: row;
-        margin-top: 100px auto 0;
-    }
+        color: $primary-color;
+        margin-left: 300px;
+        margin-right: 0px;
+        margin-top: 100px;
 
-    /* использование переменной */
+        @media (min-width:375px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            flex-direction: row;
+            margin-top: 100px auto 0;
+        }
+
+        /* использование переменной */
+    }
 }
 
 $secondary-color: #444A4A;
@@ -41,8 +38,6 @@ $secondary-color: #444A4A;
     display: flex;
     width: 615px;
     height: 75px;
-    margin-top: 40px;
-    margin-left: 300px;
     font-family: 'Alegreya Sans';
     font-style: normal;
     font-weight: 400;
@@ -50,8 +45,17 @@ $secondary-color: #444A4A;
     line-height: 36px;
     /* or 189% */
     color: $secondary-color;
+    margin-left: 300px;
+    margin-top: 20px;
 
 
+    @media (min-width: 375px) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
 
     /* использование переменной */
 }
@@ -111,21 +115,23 @@ $secondary-color: #444A4A;
     margin-left: 1000px;
     margin-top: -300px;
 
+    @media(min-width:375px; ) {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+    }
 }
 
 .coffee__info__image-container {
     display: flex;
     width: 240px;
     height: 320px;
-
+    /* Secondary / Hard green */
     margin-top: -300px;
     margin-left: 1070px;
-
-
-
-
-    /* Secondary / Hard green */
-
     border-radius: 900px;
 
     .coffee__info__image {
@@ -136,9 +142,10 @@ $secondary-color: #444A4A;
     }
 
     @media(min-width:375px) {
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: row;
+        justify-content: center;
 
     }
 }
