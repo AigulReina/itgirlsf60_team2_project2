@@ -540,13 +540,20 @@ h4 {
   display: flex;
   align-items: center;
   width: 102px;
-  height: 175px;
+  height: 20px;
   border-bottom: 2px solid black;
 }
 .footer__container .footer__info {
   grid-area: 1/3/1/4;
   width: 240px;
 }
+.footer__container .footer__text {
+  margin-bottom: 21px;
+}
 .footer__container .footer__address {
-  line-height: 2;
+  line-height: 2.5;
+}
+
+.footer__copyright {
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
