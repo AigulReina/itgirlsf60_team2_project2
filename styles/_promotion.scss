@@ -12,11 +12,7 @@ $primary-color: #000000;
 
 .coffee__info__title {
 
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 38px;
+    @extend %tpltitlefont;
     /* identical to box height */
     display: flex;
     align-items: center;
