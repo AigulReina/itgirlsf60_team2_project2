@@ -24,7 +24,15 @@
     line-height: 36px;
 }
 
-.headline__button btn{
+%tpltitlefont{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
+}
+
+.btn{
     @extend %tplbutton;
 }
 
@@ -32,7 +40,7 @@
     @extend %tplbutton;
 }
 
-.nav__button btn1{
+.btn1{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,6 +50,11 @@
     background-color: #2D635E;
     border-radius: 5px;
     text-align: center;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .nav__link{
@@ -70,6 +83,10 @@ h1{
     font-weight: 700;
     font-size: 63px;
     line-height: 63px;
+}
+
+h2{
+    @extend %tpltitlefont;
 }
 
 h4{
