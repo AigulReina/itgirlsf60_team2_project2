@@ -415,15 +415,9 @@ h4 {
 
 .coffee__info {
   display: inline-block;
-  width: 90%;
-  margin-top: 0 auto;
-}
-@media (min-width: 768px) {
-  .coffee__info {
-    max-width: 1160px;
-    width: 100%;
-    padding: 0 20px;
-  }
+  width: 611px;
+  height: 38px;
+  top: 150px;
 }
 
 .coffee__info__title {
@@ -440,6 +434,16 @@ h4 {
   margin-right: 0px;
   margin-top: 50px;
   /* использование переменной */
+}
+@media (min-width: 375px) {
+  .coffee__info__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 100px auto 0;
+  }
 }
 
 .coffee__info__text {
@@ -459,44 +463,39 @@ h4 {
 }
 
 .coffee__info__button {
-  display: none;
+  display: flex;
+  width: 240px;
+  height: 54px;
+  margin-top: 130px;
+  margin-left: 200px;
+  top: 30px;
+  color: #444A4A;
+  background-color: #2D635E;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.01em;
 }
-@media (min-width: 768px) {
-  .coffee__info__button {
-    display: flex;
-    width: 240px;
-    height: 54px;
-    margin-top: 130px;
-    margin-left: 200px;
-    top: 30px;
-    color: #444A4A;
-    background-color: #2D635E;
-    border: none;
-    border-radius: 5px;
-    padding: 12px 24px;
-    font-family: "Josefin Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    letter-spacing: 0.01em;
-  }
-  .coffee__info__button:before {
-    content: "Order now";
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 40px;
-    padding-top: 5px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    color: #FFFFFF;
-  }
-  .coffee__info__button:hover {
-    background-color: #2D635E;
-    color: #FFFFFF;
-  }
+.coffee__info__button:before {
+  content: "Order now";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  padding-top: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+.coffee__info__button:hover {
+  background-color: #2D635E;
+  color: #FFFFFF;
 }
 
 .coffee__info__background {
@@ -528,7 +527,7 @@ h4 {
 .coffee__info__subtitle {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 375px) {
   .coffee__info__subtitle {
     display: flex;
     width: 117px;
