@@ -166,7 +166,7 @@
   height: 100%;
   margin: 0;
   padding: 80px 0;
-  background-color: #eceff1;
+  background-color: #ECEFF1;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   transition-duration: 0.25s;
 }
@@ -183,7 +183,7 @@
 }
 
 .menu__item:hover {
-  background-color: #cfd8dc;
+  background-color: #CFD8DC;
 }
 
 @media (min-width: 768px) {
@@ -234,7 +234,7 @@
   height: 0px;
   border: 40px solid transparent;
   border-top-color: rgb(52, 85, 45);
-  color: #2d635e;
+  color: #2D635E;
   margin: 0;
   padding: 0;
   float: left;
@@ -345,15 +345,14 @@
   padding: 20px;
 }
 
-.shop__button,
-.headline__button btn {
+.shop__button, .headline__button btn {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 235px;
   height: 54px;
-  color: #ffffff;
-  background-color: #2d635e;
+  color: #FFFFFF;
+  background-color: #2D635E;
   border-radius: 5px;
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;
@@ -363,10 +362,8 @@
   text-align: center;
 }
 
-.offer__text,
-.title1__text2,
-.title1__text1 {
-  color: #444a4a;
+.offer__text, .title1__text2, .title1__text1 {
+  color: #444A4A;
   font-family: "Alegreya Sans";
   font-style: normal;
   font-weight: 400;
@@ -380,8 +377,8 @@
   justify-content: center;
   width: 135px;
   height: 43px;
-  color: #ffffff;
-  background-color: #2d635e;
+  color: #FFFFFF;
+  background-color: #2D635E;
   border-radius: 5px;
   text-align: center;
 }
@@ -448,9 +445,9 @@ h4 {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
-  margin-top: -390px;
-  margin-left: 990px;
+     object-fit: cover;
+  margin-top: 80px;
+  margin-left: -70px;
 }
 
 @media only screen and (min-width: 375px) {
@@ -465,7 +462,7 @@ h4 {
   display: flex;
   width: 510px;
   height: 280px;
-  background-color: #e3ebe7;
+  background-color: #E3EBE7;
   margin-left: 850px;
   margin-top: -300px;
 }
@@ -532,8 +529,8 @@ h4 {
   margin-top: 130px;
   margin-left: 50px;
   top: 30px;
-  color: #444a4a;
-  background-color: #2d635e;
+  color: #444A4A;
+  background-color: #2D635E;
   border: none;
   border-radius: 5px;
   padding: 12px 24px;
@@ -554,14 +551,14 @@ h4 {
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .coffee-info__button:hover {
-  background-color: #444a4a;
-  color: #ffffff;
+  background-color: #444A4A;
+  color: #FFFFFF;
 }
 @media only screen and (min-width: 768px) {
   .coffee-info__button .coffee-info__button {
     display: none;
   }
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
