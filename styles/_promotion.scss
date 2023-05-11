@@ -24,7 +24,6 @@ $primary-color: #000000;
     margin-right: 0px;
     margin-top: 50px;
 
-    /* использование переменной */
     @media (min-width:375px) {
         display: flex;
         justify-content: space-between;
@@ -33,6 +32,8 @@ $primary-color: #000000;
         flex-direction: row;
         margin-top: 100px auto 0;
     }
+
+    /* использование переменной */
 }
 
 $secondary-color: #444A4A;
@@ -114,7 +115,7 @@ $secondary-color: #444A4A;
     height: 320px;
 
     margin-top: -300px;
-    margin-left: 990px;
+    margin-left: 980px;
 
 
 
@@ -152,7 +153,7 @@ $secondary-color: #444A4A;
         opacity: 0.75;
         text-align: center;
         margin-top: 100px;
-        margin-left: 100px;
+        margin-left: 110px;
         transform: rotate(-90deg);
         transform-origin: left top;
         white-space: nowrap;

@@ -1,34 +1,32 @@
-.about{
+.about {
     &__container {
-        width: 90%;
-        margin: 0 auto;
-
-        @media (min-width:375px) {
-            max-width: 1160px;
-            width: 100%;
-            padding: 0 20px;
-            display: flex;
+      width: 90%;
+      margin: 0 auto;
+      @media (min-width: 375px) {
+        max-width: 1160px;
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
         flex-direction: row;
         margin-top: 50px;
-        }
+      }
     }
-
-}
-        .about__banner{
-            position:relative;
-            }
-            .banner__text{
-                position: absolute;
-                font-family: 'Cedarville Cursive';
-                font-size: 28px;
-                transform: rotate(-90deg);
-                transform-origin: left 1px;
-                top: 100px;
-            }
-            .title1 {
-                margin-left: 10%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-              }
+  }
+  .about__banner {
+    position: relative;
+  }
+  .banner__text {
+    position: absolute;
+    font-family: "Cedarville Cursive";
+    font-size: 28px;
+    transform: rotate(-90deg);
+    transform-origin: left 1px;
+    top: 100px;
+  }
+  .title1 {
+    margin-left: 45px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:20px;
+  }
