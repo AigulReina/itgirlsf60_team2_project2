@@ -1,15 +1,38 @@
 .footer__container{
+
+    @media (min-width: 768px) {
     display: grid;
     grid-template: min-content / min-content min-content 1fr;
     column-gap: 40px;
-    width: 1141px;
+    max-width: 1141px;
     margin: 131px 179px 153px 200px;
+    }
+
+    @media (max-width: 768px) {
+    display: block;
+    }
 
     .footer__img{
-        grid-area: 1 / 1 / 1 / 2;
+        
+        @media (min-width: 768px) {
+            grid-area: 1 / 1 / 1 / 2;
+            }
+
+            @media (max-width: 768px) {
+                display: none;
+                }
+        
     }
 
     .footer__img-mobile{
+
+        @media (min-width: 768px) {
+            display: none;
+            }
+
+            @media (max-width: 768px) {
+                display: block;
+                }
         display: none;
     }
 
