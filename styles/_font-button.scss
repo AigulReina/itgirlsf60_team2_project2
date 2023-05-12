@@ -82,7 +82,18 @@
 }
 
 .footer__copyright{
-    @extend %tpltext;
+    @media (min-width: 768px) {
+        @extend %tpltext;
+    }
+        @media (max-width: 768px) {
+            font-family: 'Josefin Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 36px;
+            text-align: center;
+            letter-spacing: 0.001em;
+        }
 }
 
 h1{
