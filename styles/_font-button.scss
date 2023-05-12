@@ -81,7 +81,7 @@
     @extend %tpltext;
 }
 
-.footer__copyright{
+.footer-copyright{
         @extend %tpltext;
 
         @media (max-width: 768px) {
@@ -98,7 +98,7 @@
 h1{
     font-family: 'Josefin Sans';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 63px;
     line-height: 63px;
 }
