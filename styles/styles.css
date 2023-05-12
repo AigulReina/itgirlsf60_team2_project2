@@ -214,22 +214,25 @@
     flex-direction: row;
   }
 }
-
-.about__banner {
-  position: relative;
+.about .banner__img {
+  display: none;
 }
-
-.banner__text {
-  position: absolute;
-  font-family: "Cedarville Cursive";
-  font-size: 28px;
-  transform: rotate(-90deg);
-  transform-origin: left 1px;
-  top: 100px;
+@media (min-width: 375px) {
+  .about .banner__img {
+    display: block;
+  }
 }
-
-.title1 {
+.about .banner__img-mobile {
+  display: block;
+}
+@media (min-width: 375px) {
+  .about .banner__img-mobile {
+    display: none;
+  }
+}
+.about .title1 {
   margin-left: 70px;
+  padding-top: 25px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -238,12 +241,12 @@
 
 .arrow-left,
 .arrow-right {
-  margin-top: 18%;
+  display: none;
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
   .arrow-left,
   .arrow-right {
-    display: none;
+    margin-top: 18%;
   }
 }
 
@@ -253,29 +256,29 @@
 }
 
 .carusel__shop {
-  display: flex;
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 30px 0;
+  background-color: white;
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
   .carusel__shop {
-    background-color: white;
+    display: flex;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 30px 0;
   }
 }
 
 .shop__column {
-  display: flex;
-  flex: 30%;
-  margin: 0 40px;
+  display: grid;
+  width: 100%;
+  margin-top: 20px;
+  margin: 0 5px;
+  justify-content: center;
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
   .shop__column {
-    width: 100%;
-    display: grid;
-    margin-top: 20px;
-    margin: 0 5px;
-    justify-content: center;
+    display: flex;
+    flex: 30%;
+    margin: 0 40px;
   }
 }
 
@@ -289,12 +292,6 @@
   margin: 20px;
   padding: 0 50px;
   box-shadow: 0px 15px 10px 0px #dfdede;
-}
-@media screen and (max-width: 768px) {
-  .shop__item {
-    border: solid #eff4f2;
-    flex: 25%;
-  }
 }
 
 .offer__title {

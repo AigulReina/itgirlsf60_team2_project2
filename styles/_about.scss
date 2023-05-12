@@ -16,24 +16,24 @@
     flex-direction: row;
   }
 }
-
-    
+.banner__img{
+  display: none;
+  @media (min-width: 375px){
+    display: block;
   }
-  .about__banner {
-    position: relative;
+}
+.banner__img-mobile{
+  display: block;
+  @media (min-width: 375px){
+    display: none;
   }
-  .banner__text {
-    position: absolute;
-    font-family: "Cedarville Cursive";
-    font-size: 28px;
-    transform: rotate(-90deg);
-    transform-origin: left 1px;
-    top: 100px;
-  }
+}
   .title1 {
-    margin-left: 70px;;
+    margin-left: 70px;
+    padding-top: 25px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap:20px;
   }
+}
