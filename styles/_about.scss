@@ -6,10 +6,18 @@
         max-width: 1160px;
         width: 100%;
         padding: 0 20px;
-        display: flex;
-        flex-direction: row;
       }
     }
+&__wrapper{
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 375px){
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+    
   }
   .about__banner {
     position: relative;
