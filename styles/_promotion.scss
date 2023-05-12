@@ -8,27 +8,8 @@ $primary-color: #000000;
 
     .coffee__info__title {
 
-
-    .coffee__info__title {
-
-    @extend %tpltitlefont;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    color: $primary-color;
-    margin-left: 220px;
-    margin-right: 0px;
-    margin-top: 50px;
         @extend %tpltitlefont;
         /* identical to box height */
-        display: flex;
-        align-items: center;
-        color: $primary-color;
-        margin-left: 300px;
-        margin-right: 0px;
-        margin-top: 100px;
-
-    @media (min-width:375px) {
         display: flex;
         align-items: center;
         color: $primary-color;
