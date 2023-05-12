@@ -369,6 +369,18 @@
   line-height: 16px;
 }
 
+@media (max-width: 768px) {
+  .footer__copyright {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.001em;
+  }
+}
+
 h1 {
   font-family: "Josefin Sans";
   font-style: normal;

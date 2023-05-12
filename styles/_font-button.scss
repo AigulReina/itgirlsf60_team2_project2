@@ -82,9 +82,8 @@
 }
 
 .footer__copyright{
-    @media (min-width: 768px) {
         @extend %tpltext;
-    }
+
         @media (max-width: 768px) {
             font-family: 'Josefin Sans';
             font-style: normal;
