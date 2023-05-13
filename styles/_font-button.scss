@@ -30,7 +30,7 @@
 }
 
 %tpltitlefont{
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 38px;
@@ -55,7 +55,7 @@
     background-color: #2D635E;
     border-radius: 5px;
     text-align: center;
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -69,7 +69,7 @@
 }
 
 .nav__link{
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -96,7 +96,7 @@
         @extend %tpltext;
 
         @media (max-width: 768px) {
-            font-family: 'Josefin Sans';
+            font-family: 'Josefin Sans', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
@@ -107,7 +107,7 @@
 }
 
 h1{
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 63px;
@@ -127,7 +127,7 @@ h4{
 }
 
 .offer__title{
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
