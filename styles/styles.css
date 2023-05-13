@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .header {
   padding-bottom: 123px;
 }
@@ -8,7 +7,7 @@
 }
 @media (min-width: 768px) {
   .header__container {
-    max-width: 80vw;
+    max-width: 1160px;
     width: 100%;
     padding: 0 20px;
   }
@@ -72,12 +71,17 @@
 .header__section .headline {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 12px;
 }
 @media (min-width: 768px) {
   .header__section .headline {
+    align-items: flex-start;
     gap: 26px;
   }
+}
+.header__section .headline__button {
+  margin-top: 18px;
 }
 .header__section .banner {
   display: none;
@@ -193,11 +197,14 @@
   }
 }
 
+.about {
+  padding-bottom: 110px;
+}
 .about__container {
   width: 90%;
   margin: 0 auto;
 }
-@media (min-width: 375px) {
+@media (min-width: 768px) {
   .about__container {
     max-width: 1160px;
     width: 100%;
@@ -207,17 +214,19 @@
 .about__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-@media (min-width: 375px) {
+@media (min-width: 768px) {
   .about__wrapper {
     display: flex;
     flex-direction: row;
+    gap: 100px;
   }
 }
 .about .banner__img {
   display: none;
 }
-@media (min-width: 375px) {
+@media (min-width: 768px) {
   .about .banner__img {
     display: block;
   }
@@ -225,13 +234,12 @@
 .about .banner__img-mobile {
   display: block;
 }
-@media (min-width: 375px) {
+@media (min-width: 768px) {
   .about .banner__img-mobile {
     display: none;
   }
 }
-.about .title1 {
-  margin-left: 70px;
+.about__title1 {
   padding-top: 25px;
   display: flex;
   flex-direction: column;
@@ -246,6 +254,7 @@
 @media (min-width: 768px) {
   .arrow-left,
   .arrow-right {
+    display: block;
     margin-top: 18%;
   }
 }
@@ -256,7 +265,7 @@
 }
 
 .carusel__shop {
-  background-color: white;
+  background-color: #eff4f2;
 }
 @media (min-width: 768px) {
   .carusel__shop {
@@ -277,8 +286,6 @@
 @media (min-width: 768px) {
   .shop__column {
     display: flex;
-    flex: 30%;
-    margin: 0 40px;
   }
 }
 
@@ -332,7 +339,7 @@
   text-align: center;
 }
 
-.footer-copyright, .footer__address, .offer__text, .title1__text2, .title1__text1 {
+.coffee-info__text, .footer-copyright, .footer__address, .offer__text, .title1__text2, .title1__text1 {
   color: #444A4A;
   font-family: "Alegreya Sans";
   font-style: normal;
@@ -341,7 +348,7 @@
   line-height: 36px;
 }
 
-.coffee__info .coffee__info__title, h2 {
+.coffee-info__title, h2 {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
@@ -410,161 +417,65 @@ h4 {
   line-height: 28px;
 }
 
-.coffee__info {
-  display: inline-block;
-  width: 611px;
-  height: 38px;
-  top: 150px;
+.promotion {
+  padding-bottom: 64px;
 }
-.coffee__info .coffee__info__title {
-  /* identical to box height */
+.promotion__container {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .promotion__container {
+    max-width: 1160px;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+.promotion__wrapper {
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
-  color: #000000;
-  margin-left: 300px;
-  margin-right: 0px;
-  margin-top: 100px;
-  /* использование переменной */
+  gap: 30px;
 }
-@media (min-width: 375px) {
-  .coffee__info .coffee__info__title {
+@media (min-width: 768px) {
+  .promotion__wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
     flex-direction: row;
-    margin-top: 100px auto 0;
+    gap: 100px;
   }
 }
 
-.coffee__info__text {
+.coffee-info {
   display: flex;
-  width: 615px;
-  height: 75px;
-  font-family: "Alegreya Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 36px;
-  /* or 189% */
-  color: #444A4A;
-  margin-left: 300px;
-  margin-top: 20px;
-  /* использование переменной */
+  flex-direction: column;
+  gap: 25px;
 }
-@media (min-width: 375px) {
-  .coffee__info__text {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-  }
-}
-
-.coffee__info__button {
+.coffee-info__button {
   display: none;
 }
-@media (min-width: 375px) {
-  .coffee__info__button {
-    display: flex;
-    width: 240px;
-    height: 54px;
-    margin-top: 130px;
-    margin-left: 300px;
-    top: 30px;
-    color: #444A4A;
-    background-color: #2D635E;
-    border: none;
-    border-radius: 5px;
-    padding: 12px 24px;
-    font-family: "Josefin Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    letter-spacing: 0.01em;
-  }
-  .coffee__info__button:before {
-    content: "Order now";
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 40px;
-    padding-top: 5px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    color: #FFFFFF;
-  }
-  .coffee__info__button:hover {
-    background-color: #2D635E;
-    color: #FFFFFF;
+@media (min-width: 768px) {
+  .coffee-info__button {
+    display: block;
   }
 }
-
-.coffee__info__background {
+.coffee-info__img {
   display: flex;
-  width: 450px;
-  height: 278px;
+  justify-content: space-between;
+  align-items: center;
+  width: 410px;
+  height: 276px;
+  padding-left: 72px;
   background-color: #E3EBE7;
-  margin-left: 1000px;
-  margin-top: -300px;
 }
-@media (min-width: 375px) {
-  .coffee__info__background {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.coffee__info__image-container {
-  display: flex;
-  width: 240px;
-  height: 320px;
-  /* Secondary / Hard green */
-  margin-top: -300px;
-  margin-left: 1070px;
-  border-radius: 900px;
-}
-.coffee__info__image-container .coffee__info__image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media (min-width: 375px) {
-  .coffee__info__image-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.coffee__info__subtitle {
+.coffee-info__subtitle {
   display: none;
 }
-@media (min-width: 375px) {
-  .coffee__info__subtitle {
-    display: flex;
-    width: 100%;
+@media (min-width: 768px) {
+  .coffee-info__subtitle {
+    display: block;
     height: 53px;
-    font-family: "Cedarville Cursive";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 53px;
-    color: #000000;
-    opacity: 0.75;
-    text-align: center;
-    margin-top: -50px;
-    margin-left: 110px;
+    margin-left: 67px;
+    margin-top: -26px;
     transform: rotate(-90deg);
     transform-origin: left top;
     white-space: nowrap;

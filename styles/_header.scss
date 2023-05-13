@@ -6,7 +6,7 @@
         margin: 0 auto;
 
         @media (min-width:768px) {
-            max-width: 80vw;
+            max-width: 1160px;
             width: 100%;
             padding: 0 20px;
         }
@@ -71,10 +71,16 @@
         .headline {
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 12px;
 
             @media (min-width:768px) {
+                align-items: flex-start;
                 gap: 26px;
+            }
+
+            &__button {
+                margin-top: 18px;
             }
         }
 
