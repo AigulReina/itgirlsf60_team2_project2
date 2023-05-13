@@ -500,6 +500,10 @@ h4 {
   }
 }
 
+.footer__container {
+  width: 90%;
+  justify-content: center;
+}
 @media (min-width: 768px) {
   .footer__container {
     display: grid;
@@ -507,7 +511,7 @@ h4 {
     -moz-column-gap: 1.7vw;
          column-gap: 1.7vw;
     max-width: 1141px;
-    margin: 131px 12.43vw 153px 13.8vw;
+    margin: 5% auto;
   }
 }
 @media (max-width: 768px) {
