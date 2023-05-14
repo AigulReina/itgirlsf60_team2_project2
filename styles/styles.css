@@ -384,7 +384,6 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
 .btn1:hover {
@@ -500,14 +499,21 @@ h4 {
   }
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer__container {
   display: grid;
-  justify-content: center;
   grid-template: min-content/min-content min-content 1fr;
   -moz-column-gap: 1.7vw;
        column-gap: 1.7vw;
   max-width: 1141px;
-  margin: 131px 12.43vw 153px 13.8vw;
+  margin-top: 110px;
+  margin-bottom: 150px;
 }
 @media (max-width: 768px) {
   .footer__container {

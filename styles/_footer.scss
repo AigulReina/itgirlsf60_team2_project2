@@ -1,10 +1,18 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .footer__container{
     display: grid;
-    justify-content: center;
     grid-template: min-content / min-content min-content 1fr;
     column-gap: 1.7vw;
     max-width: 1141px;
-    margin: 131px 12.43vw 153px 13.8vw;
+    margin-top: 110px;
+    margin-bottom: 150px;
 
         @media (max-width: 768px) {
             display: flex;
